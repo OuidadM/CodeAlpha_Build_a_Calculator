@@ -1,0 +1,82 @@
+/* Styles généraux du corps */
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ADD8EF;
+}
+
+/* Conteneur de la calculatrice */
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    padding: 20px; /* Ajout de padding pour un espace interne */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre pour l'esthétique */
+}
+
+/* Affichage de la calculatrice */
+#display {
+    width: 100%;
+    padding: 15px;
+    font-size: 2.5em;
+    text-align: right;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Espace entre l'affichage et les touches */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Conteneur des touches */
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 70px); /* 4 colonnes de 70px de largeur */
+    grid-template-rows: repeat(5, 70px); /* 5 rangées de 70px de hauteur */
+    gap: 10px; 
+    justify-content: center; /* Centre les touches horizontalement */
+}
+
+/* Style général des boutons */
+button{
+    border: none;
+    border-radius: 35px;
+    background-color: hsl(226, 34%, 55%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Effets au survol et au clic pour les boutons */
+button:hover{
+    background-color: hsl(226, 34%, 65%);
+}
+button:active{
+    background-color: hsl(226, 34%, 75%);
+}
+
+/* Style spécifique pour les boutons opérateurs */
+.operator-btn{
+    background-color: hsl(258, 71%, 52%);
+}
+.operator-btn:hover{
+    background-color: hsl(258, 71%, 62%);
+}
+.operator-btn:active{
+    background-color: hsl(258, 71%, 72%);
+}
+
+/* Style spécifique pour le bouton égal */
+button.equal-btn {
+    grid-column: 3 / 5; /* S'étend de la 3ème à la 4ème colonne */
+    grid-row: 5 / 6; /* Positionné sur la 5ème rangée */
+    border-radius: 35px;
+}
+
