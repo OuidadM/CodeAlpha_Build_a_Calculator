@@ -1,4 +1,4 @@
-/* Styles généraux du corps */
+/*Style applied for the whole page*/
 body{
     margin: 0;
     display: flex;
@@ -8,16 +8,16 @@ body{
     background-color: #ADD8EF;
 }
 
-/* Conteneur de la calculatrice */
+/* The content of the calculator */
 #calculator{
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 15%);
     border-radius: 15px;
-    padding: 20px; /* Ajout de padding pour un espace interne */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre pour l'esthétique */
+    padding: 20px; /* Adding padding in order to keep internal space*/
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adding shadow to enhance the appearance */
 }
 
-/* Affichage de la calculatrice */
+/* The display of the calculator */
 #display {
     width: 100%;
     padding: 15px;
@@ -28,7 +28,7 @@ body{
     color: white;
     box-sizing: border-box;
     border-radius: 10px;
-    margin-bottom: 20px; /* Espace entre l'affichage et les touches */
+    margin-bottom: 20px; /* space between the display and the buttons */
     overflow: hidden;
     white-space: nowrap;
 }
@@ -36,13 +36,13 @@ body{
 /* Conteneur des touches */
 #keys{
     display: grid;
-    grid-template-columns: repeat(4, 70px); /* 4 colonnes de 70px de largeur */
-    grid-template-rows: repeat(5, 70px); /* 5 rangées de 70px de hauteur */
+    grid-template-columns: repeat(4, 70px); /*4 columns each one having a width of 70px*/
+    grid-template-rows: repeat(5, 70px); /* 5 rows each one having a height of 70px */
     gap: 10px; 
-    justify-content: center; /* Centre les touches horizontalement */
+    justify-content: center; /* In order to center the buttons in the same row*/
 }
 
-/* Style général des boutons */
+/* Style applied to buttons*/
 button{
     border: none;
     border-radius: 35px;
@@ -54,7 +54,7 @@ button{
     transition: background-color 0.2s;
 }
 
-/* Effets au survol et au clic pour les boutons */
+/*Effects and translations producted while interacting with the buttons */
 button:hover{
     background-color: hsl(226, 34%, 65%);
 }
@@ -62,7 +62,7 @@ button:active{
     background-color: hsl(226, 34%, 75%);
 }
 
-/* Style spécifique pour les boutons opérateurs */
+/* Style applied to the operators */
 .operator-btn{
     background-color: hsl(258, 71%, 52%);
 }
@@ -73,10 +73,10 @@ button:active{
     background-color: hsl(258, 71%, 72%);
 }
 
-/* Style spécifique pour le bouton égal */
+/* A specific style applied to the button equal*/
 button.equal-btn {
-    grid-column: 3 / 5; /* S'étend de la 3ème à la 4ème colonne */
-    grid-row: 5 / 6; /* Positionné sur la 5ème rangée */
+    grid-column: 3 / 5; /* In ordre to expand it from the 3rd to the 4th column */
+    grid-row: 5 / 6; /* to place it in the 5 row */
     border-radius: 35px;
 }
 
